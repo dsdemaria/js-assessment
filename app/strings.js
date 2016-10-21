@@ -9,7 +9,7 @@ exports.stringsAnswers = {
 
   },
 
-  reverseString: function(str) {
-
+  reverseString: str => {
+    return str.split('').reverse().join('');
   }
 };

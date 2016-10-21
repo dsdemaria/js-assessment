@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "test": "mocha -R spec 'tests/app'",
+    "test": "mocha --compilers js:babel-register",
     "lint": "eslint --quiet tests/app app",
     "lint-warn": "eslint tests/app app"
   },
@@ -32,6 +32,7 @@
   },
   "private": true,
   "devDependencies": {
+    "babel-register": "^6.16.3",
     "eslint": "^2.8.0"
   }
 }
